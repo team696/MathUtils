@@ -4,7 +4,7 @@
 package org.team696.MathUtils;
 
 public class MathUtils {
-  double linearMap(double x, double in_min, double in_max, double out_min, double out_max) {
+  public static double linearMap(double x, double in_min, double in_max, double out_min, double out_max) {
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
   }
 
@@ -14,7 +14,7 @@ public class MathUtils {
    * @param angle
    * @return
    */
-  double wrapAngle360(double angle) {
+  public static double wrapAngle360(double angle) {
     // reduce the angle
     angle = angle % 360;
 
@@ -28,7 +28,7 @@ public class MathUtils {
    * @param angle
    * @return
    */
-  double wrapAngle180(double angle) {
+  public static double wrapAngle180(double angle) {
 
     angle = wrapAngle360(angle);
     // force into the minimum absolute value residue class, so that -180 < angle <=
