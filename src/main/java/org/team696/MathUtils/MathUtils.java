@@ -38,4 +38,11 @@ public class MathUtils {
     }
     return angle;
   }
+
+  public static double deadBand(double x, double deadbandWidth){
+  if(x < deadbandWidth){
+    return 0;
+  }
+  return linearMap(x, deadbandWidth, 1, 0, 1);
+  }
 }
