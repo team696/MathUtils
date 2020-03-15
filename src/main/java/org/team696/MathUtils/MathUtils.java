@@ -45,4 +45,22 @@ public class MathUtils {
   }
   return linearMap(x, deadbandWidth, 1, 0, 1);
   }
+
+  /**
+   * Converts inches to metric
+   * @param inches
+   * @return
+   */
+  public static double StM(double inches){
+    return inches * 0.0254;
+  }
+
+  /**
+   * Converts metric to inches
+   * @param metric
+   * @return
+   */
+  public static double MtS(double metric){
+    return metric / 0.0254;
+  }
 }
